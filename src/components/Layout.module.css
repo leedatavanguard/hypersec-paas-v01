@@ -1,0 +1,21 @@
+.menuItem {
+  margin: 4px 8px !important;
+  border-radius: 6px !important;
+}
+
+.menuItem:global(.ant-menu-item-selected) {
+  background-color: #123456 !important;
+  color: #ffffff !important;
+}
+
+.menuItem:global(.ant-menu-item-selected) :global(.anticon) {
+  color: #ffffff !important;
+}
+
+.menuItem:hover {
+  color: #123456 !important;
+}
+
+.menuItem:global(.ant-menu-item-selected):hover {
+  color: #ffffff !important;
+}

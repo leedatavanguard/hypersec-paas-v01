@@ -1,0 +1,256 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue',
+    Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f7fa;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50;
+}
+
+/* Card styles */
+.ant-card {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #ffffff 0%, #f8faff 100%);
+}
+
+.ant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05),
+              0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #123456 0%, #234567 100%) !important;
+  color: white !important;
+}
+
+.stat-card .ant-statistic-title {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  margin-bottom: 8px;
+  opacity: 0.95;
+}
+
+.stat-card .ant-statistic-content {
+  color: white !important;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.stat-card .ant-typography {
+  color: white !important;
+  opacity: 0.95;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1));
+  pointer-events: none;
+}
+
+/* Schema Management Styles */
+.schema-tabs .ant-tabs-nav {
+  margin-bottom: 24px;
+}
+
+.schema-tabs .ant-tabs-tab {
+  padding: 12px 24px;
+  margin: 0 8px 0 0;
+  border-radius: 8px 8px 0 0;
+  transition: all 0.3s ease;
+}
+
+.schema-tabs .ant-tabs-tab-active {
+  background-color: #123456 !important;
+}
+
+.schema-tabs .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: white !important;
+}
+
+.schema-tabs .ant-tabs-tab-btn {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.schema-tabs .ant-tabs-tab:hover {
+  color: #123456;
+}
+
+.schema-tabs .ant-tabs-tab-active:hover {
+  color: white;
+}
+
+.schema-tabs .ant-tabs-ink-bar {
+  background-color: #123456;
+}
+
+/* Drawer styles */
+.ant-drawer-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.ant-drawer-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ant-drawer-body {
+  padding: 24px;
+}
+
+.ant-drawer-content-wrapper {
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+.ant-form-item-label > label {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.ant-input,
+.ant-select-selector {
+  border-radius: 6px;
+}
+
+.ant-input:hover,
+.ant-select-selector:hover {
+  border-color: #123456;
+}
+
+.ant-input:focus,
+.ant-select-selector:focus {
+  border-color: #123456;
+  box-shadow: 0 0 0 2px rgba(18, 52, 86, 0.1);
+}
+
+/* Timeline chart card */
+.timeline-card {
+  height: 500px;
+  margin: 32px 0;
+  background: #f8faff !important;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03),
+              0 1px 6px -1px rgba(0, 0, 0, 0.02),
+              0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+/* Timeline toggle buttons */
+.timeline-toggle .ant-radio-button-wrapper {
+  height: 36px;
+  padding: 0 16px;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.timeline-toggle .ant-radio-button-wrapper-checked {
+  background: #123456 !important;
+  border-color: #123456 !important;
+  color: white !important;
+}
+
+.timeline-toggle .ant-radio-button-wrapper-checked:hover {
+  color: white !important;
+  background: #234567 !important;
+}
+
+.timeline-toggle .ant-radio-button-wrapper:not(.ant-radio-button-wrapper-checked):hover {
+  color: #123456;
+}
+
+/* Button styles */
+.ant-btn {
+  font-weight: 500;
+  border-radius: 8px;
+  height: 36px;
+  padding: 0 16px;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ant-btn-primary {
+  background: #123456;
+  border: none;
+  box-shadow: 0 2px 4px rgba(18, 52, 86, 0.1);
+}
+
+.ant-btn-primary:hover {
+  background: #234567;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(18, 52, 86, 0.2);
+}
+
+/* Layout spacing */
+.page-container {
+  padding: 24px;
+}
+
+.section-spacing {
+  margin-bottom: 32px;
+}
+
+.header-spacing {
+  margin-bottom: 24px;
+}
+
+/* Radio button group */
+.ant-radio-group {
+  background: #f5f7fa;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.ant-radio-button-wrapper {
+  border: none !important;
+  background: transparent;
+  transition: all 0.2s;
+}
+
+.ant-radio-button-wrapper:hover {
+  color: #123456;
+}
+
+.ant-radio-button-wrapper-checked {
+  background: white !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Alert styles */
+.ant-alert {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Date picker styles */
+.ant-picker {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 8px 12px;
+}
+
+.ant-picker:hover {
+  border-color: #123456;
+}
